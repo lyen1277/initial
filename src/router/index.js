@@ -1,9 +1,5 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '@/views/Home'
-import About from '@/views/About'
-import Activity from '@/views/Activity'
-import Vip from '@/views/Vip'
 import My from '@/views/My'
 import othes from './route/othes'
 
@@ -19,26 +15,6 @@ const routes = [
     {
         path: '/',
         redirect: '/login'
-    },
-    {
-        path: '/home',
-        name: 'home',
-        component: Home
-    },
-    {
-        path: '/about',
-        name: 'about',
-        component: About
-    },
-    {
-        path: '/activity',
-        name: 'activity',
-        component: Activity
-    },
-    {
-        path: '/vip',
-        name: 'vip',
-        component: Vip
     },
     {
         path: '/my',
