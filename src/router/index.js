@@ -10,7 +10,6 @@ VueRouter.prototype.push = function push (location) {
 Vue.use(VueRouter)
 
 // requireAuth   是否需要token,需要则设 requireAuth: true
-// needBar   是否需要底部导航栏,不需要则设 needBar: true
 const routes = [
     {
         path: '/',
