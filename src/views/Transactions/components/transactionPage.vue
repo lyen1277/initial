@@ -24,14 +24,14 @@
           </div>
           <span class="chargeRight">-200.00元</span>
       </div>
-      <div class="charge">
+      <div @click="depositDetail" class="charge">
           <div class="chagrLeft">
               <div>人工存入</div>
               <span class="time">2019-10-24&nbsp;14:09</span>
           </div>
           <span style="color: #000" class="chargeRight">+200.00元</span>
       </div>
-      <div class="charge">
+      <div @click="rechargeCancelDetail" class="charge">
           <div class="chagrLeft">
               <div>充值</div>
               <span class="time">2019-10-24&nbsp;14:09</span>
@@ -61,6 +61,16 @@ export default {
         artificialDetail () {
             this.$router.push({
                 path: '/artificialDetail'
+            })
+        },
+        depositDetail () {
+            this.$router.push({
+                path: '/depositDetail'
+            })
+        },
+        rechargeCancelDetail () {
+            this.$router.push({
+                path: '/rechargeCancelDetail'
             })
         }
     }

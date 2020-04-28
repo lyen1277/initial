@@ -43,5 +43,15 @@ export default [
         path: '/artificialDetail',
         name: 'artificialDetail',
         component: () => import('@/views/Transactions/artificialDetail')
+    },
+    {
+        path: '/depositDetail',
+        name: 'depositDetail',
+        component: () => import('@/views/Transactions/depositDetail')
+    },
+    {
+        path: '/rechargeCancelDetail',
+        name: 'rechargeCancelDetail',
+        component: () => import('@/views/Transactions/rechargeCancelDetail')
     }
 ]
